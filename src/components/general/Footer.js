@@ -10,7 +10,7 @@ const Footer = props => {
 		<footer id='footer' className='row page-footer font-weight-light footer-container fixed-bottom'>
 			<div className='col-md-12'>
 				<div className='footer-copyright text-right py-1 px-3'>
-					© {yearCurrent.getFullYear()} Copyright: {config.appSettings.name} {config.appSettings.version} empowered by Marandu
+				{/* 	© {yearCurrent.getFullYear()} Copyright: {config.appSettings.name} {config.appSettings.version} empowered by Marandu */}
 				</div>
 			</div>
 		</footer>

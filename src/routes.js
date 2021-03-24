@@ -20,6 +20,17 @@ import ProfileNewPage from 'src/components/pages/ProfileNewPage';
 import ProfileEditPage from 'src/components/pages/ProfileEditPage';
 
 
+import nuevaCircular from 'src/components/pages/circular/nuevaCircular'
+import listadoCircular from 'src/components/pages/circular/listadoCircular'
+import listadoTipoCircular from 'src/components/pages/TipoCircular/listadoTipoCircular'
+import nuevoTipoCircular from 'src/components/pages/TipoCircular/nuevoTipoCircular'
+
+import listadoTipoDestinatario from 'src/components/pages/TipoDestinatario/listadoTipoDestinatario'
+import nuevoTipoDestinatario from 'src/components/pages/TipoDestinatario/nuevoTipoDestinatario'
+
+import listadoEscuela from 'src/components/pages/Escuela/listadoEscuela'
+import nuevaEscuela from 'src/components/pages/Escuela/nuevaEscuela'
+
 
 
 export const INITIAL_URI = '/';
@@ -27,6 +38,17 @@ export const LOGIN_URI = '/login';
 export const FORGOT_PASSWORD_URI = '/forgot-password';
 export const RESET_PASSWORD_URI = '/reset-password';
 
+export const NUEVA_CIRCULAR = '/nueva-circular'
+export const LISTADO_CIRCULAR = '/lista-circular'
+
+export const LISTADO_TIPO_CIRCULAR = '/lista-tipo-circular'
+export const NUEVO_TIPO_CIRCULAR = '/nuevo-tipo-circular'
+
+export const LISTADO_TIPO_DESTINATARIO = '/lista-tipo-destinatario'
+export const NUEVO_TIPO_DESTINATARIO = '/nuevo-tipo-destinatario'
+
+export const LISTADO_ESCUELA = '/lista-escuela'
+export const NUEVA_ESCUELA = '/nueva-escuela'
 
 
 export const USER_LIST = '/user-list';
@@ -62,12 +84,23 @@ const routes = (
 			<Route path={PROFILE_NEW} component={ProfileNewPage} />
 			<Route path={PROFILE_EDIT} component={ProfileEditPage} />
 
+			<Route path={PROFILE_EDIT} component={ProfileEditPage} />
 
 
 
 
+			<Route path={NUEVA_CIRCULAR} component={nuevaCircular} />
+			<Route path={LISTADO_CIRCULAR} component={listadoCircular} />
 
-			<Route path={INITIAL_URI} component={IndexPage} />
+			<Route path={LISTADO_TIPO_CIRCULAR} component={listadoTipoCircular} />
+			<Route path={NUEVO_TIPO_CIRCULAR} component={nuevoTipoCircular} />
+			
+			
+			<Route path={LISTADO_ESCUELA} component={listadoEscuela} />
+			<Route path={NUEVA_ESCUELA} component={nuevaEscuela} />
+
+			<Route path={LISTADO_TIPO_DESTINATARIO} component={listadoTipoDestinatario} />
+			<Route path={NUEVO_TIPO_DESTINATARIO} component={nuevoTipoDestinatario} />
 
 			<Route render={() => (<div>Miss</div>)} />
 		</Switch>

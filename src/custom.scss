@@ -5,7 +5,7 @@ $break-small: 400px;
 $break-large: 1200px;
 
 $deep-color: #60a642;
-$main-color: #72bb53;
+$main-color: #300cfa;
 $secondary-color: #cae9ba;
 $tertiary-color: #e0f2d7;
 $black-color: black;
@@ -19,14 +19,12 @@ $footer-background-color: rgba(0, 0, 0, 0.5);
 }
 
 input.placeholderOpacity::placeholder {
-	opacity: .6;
+	opacity: 0.6;
 }
-
-
 
 // Super tree override
 .super-treeview-node-content {
-	border: 1px solid rgba(0,0,0,.3);
+	border: 1px solid rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
 	background-color: $secondary-color;
 	.super-treeview-text {
@@ -34,8 +32,6 @@ input.placeholderOpacity::placeholder {
 	}
 }
 // END Super tree override
-
-
 
 // Sweet alert override
 .swal-footer {
@@ -52,8 +48,6 @@ input.placeholderOpacity::placeholder {
 	color: $white-color;
 }
 // END Sweet alert override
-
-
 
 // Steps override
 .rc-steps {
@@ -82,8 +76,6 @@ input.placeholderOpacity::placeholder {
 	}
 }
 // END Steps override
-
-
 
 // Bootstrap Override
 .text-success {
@@ -143,15 +135,15 @@ table {
 	}
 }
 .text-danger {
-	color: #DC3545 !important;
+	color: #dc3545 !important;
 	* {
-		color: #DC3545 !important;
+		color: #dc3545 !important;
 	}
 }
 .text-warning {
-	color: #FFC107 !important;
+	color: #ffc107 !important;
 	* {
-		color: #FFC107 !important;
+		color: #ffc107 !important;
 	}
 }
 .dropdown {
@@ -159,11 +151,11 @@ table {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		
+
 		.fa-chevron-down {
-			transition: .3s;
+			transition: 0.3s;
 		}
-		
+
 		&.open {
 			.fa-chevron-down {
 				transform: rotate(180deg);
@@ -176,10 +168,10 @@ table {
 // React Widget override
 .rw-widget-input {
 	ul {
-		margin-top: .4rem;
-		margin-bottom: .4rem;
-		margin-left: .4rem;
-	
+		margin-top: 0.4rem;
+		margin-bottom: 0.4rem;
+		margin-left: 0.4rem;
+
 		li {
 			span {
 				color: $black-color;
@@ -197,7 +189,7 @@ table {
 	color: $main-color;
 
 	* {
-		color:  $main-color !important;
+		color: $main-color !important;
 	}
 }
 
@@ -294,11 +286,10 @@ table {
 
 .mandatory-label {
 	justify-content: flex-end;
-
 }
 
 .mandatory-asterisk {
-	font-size: .5rem;
+	font-size: 0.5rem;
 }
 
 .close-button {
@@ -311,119 +302,133 @@ table {
 	/* Chrome, Safari, Edge, Opera */
 	&::-webkit-outer-spin-button,
 	&::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
+		-webkit-appearance: none;
+		margin: 0;
 	}
 
 	/* Firefox */
-	&[type=number] {
-	-moz-appearance: textfield;
+	&[type="number"] {
+		-moz-appearance: textfield;
 	}
 }
 
 //Quita las fechitas del input number
-@at-root input[type=number]::-webkit-inner-spin-button, 
-	input[type=number]::-webkit-outer-spin-button { 
-	-webkit-appearance: none; 
-	margin: 0; 
-	}
-	input[type=number] { -moz-appearance:textfield; }
+@at-root input[type="number"]::-webkit-inner-spin-button,
+	input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
 
-	//Ancho fijo de columnas
-	.ancho-columna{
-		width: 5%;
-	}
+//Ancho fijo de columnas
+.ancho-columna {
+	width: 5%;
+}
 
-	//Formato control de partida
-	.super-treeview > div > .super-treeview-node > .super-treeview-node-content > label {
-		font-size: 100%;
-		width: 100%!important;
-		padding-right: 19px !important;
-		padding-bottom: 5px;
-		padding-left: 13px;
-		margin-top: 1px;
-	}
+//Formato control de partida
+.super-treeview > div > .super-treeview-node > .super-treeview-node-content > label {
+	font-size: 100%;
+	width: 100% !important;
+	padding-right: 19px !important;
+	padding-bottom: 5px;
+	padding-left: 13px;
+	margin-top: 1px;
+}
 
-	label.super-treeview-text span {
-		white-space: normal !important;
-		width: 100% !important;
-		word-break: break-word !important;
-		background-color: #72bb53;
-		margin-bottom: 0px;
-		color: white;
-		padding-left: 16px;
-		display: block !important;
-		}
-		.detailCredit td.font-weight-bold.text-left {
-			width: 100%;
-		}
-		hr {
-			background-color: #72bb53;
-		}
-		.modal .modal-header .modal-title {
-			text-align: center;
-		}
-		svg.svg-inline--fa.fa-asterisk.fa-w-16.fa-xs.mr-1.text-danger.mandatory-asterisk {
-			margin-bottom: 16px;
-		}
+label.super-treeview-text span {
+	white-space: normal !important;
+	width: 100% !important;
+	word-break: break-word !important;
+	background-color: #72bb53;
+	margin-bottom: 0px;
+	color: white;
+	padding-left: 16px;
+	display: block !important;
+}
+.detailCredit td.font-weight-bold.text-left {
+	width: 100%;
+}
+hr {
+	background-color: #72bb53;
+}
+.modal .modal-header .modal-title {
+	text-align: center;
+}
+svg.svg-inline--fa.fa-asterisk.fa-w-16.fa-xs.mr-1.text-danger.mandatory-asterisk {
+	margin-bottom: 16px;
+}
 
-		.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
-			width: 100%;
-			padding-right: 15px;
-			padding-left: 15px;
-			display: inline-grid;
-		}
-		//Formato tabla GestionServicio
-		.codTableFormat {
-			width: 82px !important;
-			max-width: 82px;
-		}
-		.descTableFormat {
-			width: 400px !important;
-			max-width: 406px;
-			min-width: 406px;
-		}
-		.abrevTableFormat{
-			width: 189px !important;
-			max-width: 185px;
-			min-width: 185px;
-		}
-		.tipeTableForm{
-			width: 132px !important;
-			max-width: 130px;
-			min-width: 130px;
-		}
-		/*Ancho fijo de tabla listado de servicio*/
-		.tbCod{
-			width: 68px !important;
-		}
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: inline-grid;
+}
+//Formato tabla GestionServicio
+.codTableFormat {
+	width: 82px !important;
+	max-width: 82px;
+}
+.descTableFormat {
+	width: 400px !important;
+	max-width: 406px;
+	min-width: 406px;
+}
+.abrevTableFormat {
+	width: 189px !important;
+	max-width: 185px;
+	min-width: 185px;
+}
+.tipeTableForm {
+	width: 132px !important;
+	max-width: 130px;
+	min-width: 130px;
+}
+/*Ancho fijo de tabla listado de servicio*/
+.tbCod {
+	width: 68px !important;
+}
 
-		.tbDesc{
-			width: 392px !important;
-		}
-		.tbAbrev{
-			width: 175px !important;
-		}
-		.tbTipo{
-			width: 145px !important;
-		}
-		.tbAction{
-			width: 175px !important;
-		}
+.tbDesc {
+	width: 392px !important;
+}
+.tbAbrev {
+	width: 175px !important;
+}
+.tbTipo {
+	width: 145px !important;
+}
+.tbAction {
+	width: 175px !important;
+}
 
 //Puntos suspensivos ...
-.ellipsis{
-	width:200px;
-	height:20px;
-	padding:20px;
-	border:1px solid blue;
-	text-overflow:ellipsis;
-	white-space:nowrap; 
-	overflow:hidden; 
-  }
-  .ellipsis:hover {
+.ellipsis {
+	width: 200px;
+	height: 20px;
+	padding: 20px;
+	border: 1px solid blue;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.ellipsis:hover {
 	width: auto;
 	white-space: initial;
-	overflow:visible;
+	overflow: visible;
 	cursor: pointer;
-  }
+}
+
+label.form-label {
+	color: #3f00ff;
+}
+
+option {
+	color: black;
+}

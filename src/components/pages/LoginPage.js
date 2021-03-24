@@ -5,8 +5,7 @@ import { useForm } from 'react-hook-form';
 import { Row, Card, Image, Form, Button, Spinner } from 'react-bootstrap';
 import config from 'Config';
 
-import logo from 'App/assets/images/logo_gobierno_misiones.png';
-import logoContaduria from 'App/assets/images/logo_contaduria.png';
+
 
 import LoggedOutCard from 'src/components/general/LoggedOutCard';
 import FormFieldError from 'src/components/general/FormFieldError';
@@ -38,11 +37,11 @@ const LoginPage = props => {
 
 	const cardBody = <>
 		<Row className='h-100 justify-content-center align-items-center my-3'>
-			<Image src={logo} fluid />
+		{/* 	<Image src={logo} fluid /> */}
 		</Row>
 
 		<Row className='h-100 justify-content-center align-items-center my-3'>
-			<Image src={logoContaduria} fluid />
+		{/* 	<Image src={logoContaduria} fluid /> */}
 		</Row>
 
 		<Card.Title className='text-center mb-4 mt-1 text-main-color'>

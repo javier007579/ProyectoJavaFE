@@ -1,8 +1,8 @@
 export default {
 	"appSettings": {
-		"name": "Sistema Administrativo Financiero Integral",
-		"shortName": "SAFI 2.0",
-		"version": "v0.3.3",
+		"name": "Trabajo Final de Java",
+		"shortName": "TP FINAL 1.0",
+		"version": "v0.0.1",
 		"state": {
 			"SAVING_PERIOD": 1000
 		},
